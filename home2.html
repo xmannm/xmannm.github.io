@@ -9,7 +9,7 @@
 <style>
 body {
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
@@ -21,17 +21,14 @@ body {
   text-align: center;
 }
 
-.header h1{margin: 100px 100px 300px 200px;
-		text-align: left;
+.header h1{margin: 100px 200px 300px 200px;
+		text-align: center;
 	
 	}	
 	
 
 #navbar {
-	float: right;
-	left: 50%;
- 	transform: translate(-50%, 0%);
-
+	z-index: 1;
 }
 
 #navbar a,.info-cont a {
@@ -60,6 +57,7 @@ body {
 	width: 100%;
 padding-top: 16px;
   padding-bottom: 16px;
+	z-index: 1;
 	
 }
 	.slim-conts {
@@ -75,7 +73,7 @@ padding-top: 80px;
   top: 0;
 float:right;
 	background-color: #1D1D1D;
-	
+	width: 100%;
 }
 
 .sticky + .content {
@@ -85,6 +83,8 @@ float:right;
 .dropdown {
   position: relative;
   display: inline-block;
+	z-index: 2;
+	
 }
 
 .dropdown-content {
@@ -92,18 +92,22 @@ float:right;
   position: absolute;
 	background-color:rgba(0,0,0,0.56);
   min-width: 160px; 
-  padding: 35px 16px 12px 16px;
-  z-index: 1;
+  padding: 50px 16px 12px 16px;
+	overflow: auto;
+	font-size: 20px;
+	
 }
-
+	
+	
 .dropdown:hover .dropdown-content {
   display: block;
+	z-index: -1;
 }
 	
 	/* Slideshow container */
 .slideshow-container {
   position: relative;
-  
+
 }
 
 /* Slides */
@@ -197,28 +201,28 @@ float:right;
       }
     );
   </script>
-  <div class="logo"><a href="home.html"><img src="images/logo.png" alt="logo" width="180" height="90"/></a> </div>
+  <div class="logo"><a href="home2.html"><img src="images/logo-white.png" alt="logo"/></a> </div>
   <h1>Michal Mann</h1>
   
   <div id="navbar">
   <div class="dropdown">
-  <a >TETOVÁNÍ</a>
+  <a href="tattoos.html">TETOVÁNÍ</a>
   <div class="dropdown-content">
-  <a href="tattoos.html">práce co už jsem dělal</a>
+  <i >práce co už jsem dělal</i>
   </div>
 </div>
  
  <div class="dropdown">
-  <a >NÁVRHY</a>
+  <a href="flashes.html">NÁVRHY</a>
   <div class="dropdown-content">
-  <a href="flashes.html">moje volné návrhy k dispozici</a>
+  <i >moje volné návrhy k dispozici</i>
   </div>
 </div>
   
  <div class="dropdown">
-  <a>KONTAKT</a>
+  <a href="contact.html">KONTAKT</a>
   <div class="dropdown-content">
-  <a href="contact.html">tady najdeš, kde se objednat</a>
+  <i >tady najdeš, kde se objednat</i>
   </div>
 </div>
 
