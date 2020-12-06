@@ -29,6 +29,7 @@ body {
 
 #navbar {
 	z-index: 1;
+	
 }
 
 #navbar a,.info-cont a {
@@ -50,6 +51,7 @@ body {
 #navbar a.active {
   /*background-color: #4CAF50;*/
   color: white;
+	font-size: 10px;
 }
 
 	
@@ -71,13 +73,19 @@ padding-top: 80px;
 .sticky {
   position: fixed;
   top: 0;
-float:right;
+  float:right;
 	background-color: #1D1D1D;
 	width: 100%;
+	font-size: 12px;
 }
-
-.sticky + .content {
-  padding-top: 60px;
+	
+.stickyelement{
+  font-size: 10px;
+}
+	
+.sticky, .content {
+/*  padding-top: 60px;*/
+	font-size: 12px;
 }
 	
 .dropdown {
@@ -86,6 +94,7 @@ float:right;
 	z-index: 2;
 	
 }
+
 
 .dropdown-content {
   display: none;
@@ -206,21 +215,21 @@ float:right;
   
   <div id="navbar">
   <div class="dropdown">
-  <a href="tattoos.html">TETOVÁNÍ</a>
+  <a href="tattoos.html" class="stickyelement">TETOVÁNÍ</a>
   <div class="dropdown-content">
   <i >práce co už jsem dělal</i>
   </div>
 </div>
  
  <div class="dropdown">
-  <a href="flashes.html">NÁVRHY</a>
+  <a href="flashes.html" class="stickyelement">NÁVRHY</a>
   <div class="dropdown-content">
   <i >moje volné návrhy k dispozici</i>
   </div>
 </div>
   
  <div class="dropdown">
-  <a href="contact.html">KONTAKT</a>
+  <a href="contact.html" class="stickyelement">KONTAKT</a>
   <div class="dropdown-content">
   <i >tady najdeš, kde se objednat</i>
   </div>
@@ -322,10 +331,23 @@ window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
+//	var dropdown = document.getElementsByClassName("dropdown");
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
+	  
+	navbar.style.fontSize="10px";
+//	  var element = document.getElementsByClassName("sticky");
+//	 
+//	  for (var i = 0; i< element.length; i++){
+//		  element[i].style.fontSize="10px";
+//		  
+//	  }
+   
+  
+//	 navbar.style.fontSize=10px;
+//	dropdown.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
