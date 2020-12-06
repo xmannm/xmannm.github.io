@@ -1,312 +1,127 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <title>Handpoke Tattoo MM</title>
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-size: 24px;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}
-
-.header {
-  width: 100%;
-  padding-top: 10%;
-  padding-bottom: 5%;
-	color:white;
-  text-align: center;
-}
-
-.header h1{margin: 100px 200px 300px 200px;
-		text-align: center;
-	
-	}	
-	
-
-#navbar {
-	z-index: 1;
-	
-}
-
-#navbar a,.info-cont a {
-  float: left;
-  display: block;
-  color: #F1F1F1;
-  text-align: center;
-  padding: 10px 40px;
-  text-decoration: none;
-  font-size: 30px;
-	
-}
-
-#navbar a:hover {
- /* background-color: #ddd;
-  color: black;*/
-}
-
-#navbar a.active {
-  /*background-color: #4CAF50;*/
-  color: white;
-	font-size: 10px;
-}
-
-	
-.content {
-	width: 100%;
-padding-top: 16px;
-  padding-bottom: 16px;
-	z-index: 1;
-	
-}
-	.slim-conts {
-	width: 60%;
-padding-top: 80px;
-  padding-bottom: 80px;
-	padding-left: 20%;
-	padding-right: 20%;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  float:right;
-	background-color: #1D1D1D;
-	width: 100%;
-	font-size: 12px;
-}
-	
-.stickyelement{
-  font-size: 10px;
-}
-	
-.sticky, .content {
-/*  padding-top: 60px;*/
-	font-size: 12px;
-}
-	
-.dropdown {
-  position: relative;
-  display: inline-block;
-	z-index: 2;
-	
-}
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-	background-color:rgba(0,0,0,0.56);
-  min-width: 160px; 
-  padding: 50px 16px 12px 16px;
-	overflow: auto;
-	font-size: 20px;
-	
-}
-	
-	
-.dropdown:hover .dropdown-content {
-  display: block;
-	z-index: -1;
-}
-	
-	/* Slideshow container */
-.slideshow-container {
-  position: relative;
-
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 50px;
-  text-align: center;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-  text-align: center;
-  padding: 20px;
-  
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-	.info-cont {
-  
-		padding:200px;	
-		
-}
-	.info-cont h2, .info-cont a {
-		color: white;
-}
-	.info-cont h2, .info-cont a:hover {
-		color:#B4B4B4 ;
-}
-	.footer {
-  color:#828282;
-		text-align: center;
-		font-size: 15px;
-		padding:100px;	
-		background-color:#0F0F0F ;	
-}
-	
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="header">
-   <script src="easy_background.js"></script>
-  <script>
-    easy_background(".header",
-      {
-        slide: ["images/01.jpg", "images/portrait-cropped.png"],
-        delay: [2000, 2000]
-      }
-    );
-  </script>
-  <div class="logo"><a href="home2.html"><img src="images/logo-white.png" alt="logo"/></a> </div>
-  <h1>Michal Mann</h1>
-  
-  <div id="navbar">
-  <div class="dropdown">
-  <a href="tattoos.html" class="stickyelement">TETOVÁNÍ</a>
-  <div class="dropdown-content">
-  <i >práce co už jsem dělal</i>
-  </div>
-</div>
- 
- <div class="dropdown">
-  <a href="flashes.html" class="stickyelement">NÁVRHY</a>
-  <div class="dropdown-content">
-  <i >moje volné návrhy k dispozici</i>
-  </div>
-</div>
-  
- <div class="dropdown">
-  <a href="contact.html" class="stickyelement">KONTAKT</a>
-  <div class="dropdown-content">
-  <i >tady najdeš, kde se objednat</i>
-  </div>
-</div>
+  <div class="header">
+    <script src="easy_background.js"></script>
+    <script>
+      easy_background(".header",
+        {
+          slide: ["images/01.jpg", "images/portrait-cropped.png"],
+          delay: [2000, 2000]
+        }
+      );
+    </script>
+    <div class="logo"><a href="home2.html"><img src="images/logo-white.png" alt="logo" /></a> </div>
+    <h1>Michal Mann</h1>
 
-</div>
-</div>
+    <div id="navbar">
+      <div class="dropdown">
+        <a href="tattoos.html" class="stickyelement">TETOVÁNÍ</a>
+        <div class="dropdown-content">
+          <i>práce co už jsem dělal</i>
+        </div>
+      </div>
 
+      <div class="dropdown">
+        <a href="flashes.html" class="stickyelement">NÁVRHY</a>
+        <div class="dropdown-content">
+          <i>moje volné návrhy k dispozici</i>
+        </div>
+      </div>
 
+      <div class="dropdown">
+        <a href="contact.html" class="stickyelement">KONTAKT</a>
+        <div class="dropdown-content">
+          <i>tady najdeš, kde se objednat</i>
+        </div>
+      </div>
 
- 
-<div class="content">
-<div class="slim-conts">
- <h2>CO JE HANDPOKE?</h2>
- 
- <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width slides/quotes -->
-  <div class="mySlides">
-    <a>Trvalé tetování, které se tvoří bez strojku a elektřiny, pouze jehlou a barvou...</a>
-    
+    </div>
   </div>
 
-  <div class="mySlides">
-    <a>Barva je vpravována do kůže tečku po tečce...</a>
-   
+
+
+
+  <div class="content">
+    <div class="slim-conts">
+      <h2>CO JE HANDPOKE?</h2>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+          <a>Trvalé tetování, které se tvoří bez strojku a elektřiny, pouze jehlou a barvou...</a>
+
+        </div>
+
+        <div class="mySlides">
+          <a>Barva je vpravována do kůže tečku po tečce...</a>
+
+        </div>
+
+        <div class="mySlides">
+          <a>Závislost...</a>
+
+        </div>
+
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="info-cont">
+      <h2><a href="aboutme.html">O MĚ</a></h2>
+      <script src="easy_background.js"></script>
+      <script>
+        easy_background(".info-cont",
+          {
+            slide: ["images/01.jpg", "images/portrait-cropped.png"],
+            delay: [2000, 2000]
+          }
+        );
+      </script>
+    </div>
+
+    <div class="slim-conts">
+      <h2>PROCES STRUČNĚ KROK ZA KROKEM</h2>
+      <p>S klienty se nejprve domlouvám online. Napíšou jaký motiv by chtěli,jak si ho představují, nebo co by měl
+        znázorňovat (případně mohou poslat vlastní obrázek pro inspiraci), a já jim následně zpracuji návrh ke
+        schválení. Pokud jsou s návrhem spokojení domluvíme se na termínu kdy samotné tetování proběhne.</p>
+      <p>Před tetováním by člověk neměl pít alkohol. Měl by přijít dobře naladěný a najedený.</p>
+      <p> Po krátké osobní konzultaci otisknu, nebo překreslím motiv na kůži a můžeme jít na věc. </p>
+      <p>Hotové tetování si vyfotím a zalepím ho fólií. Před odchodem se pak také dozvíte vše o tom, jak o své nové
+        tetování pečovat a na co si dát pozor.</p>
+      <p> </p>
+
+    </div>
   </div>
 
-  <div class="mySlides">
-    <a>Závislost...</a>
-    
+  <div class="footer">
+    &copy; MM, 2020
   </div>
 
-  <!-- Next/prev buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
 
-<!-- Dots/bullets/indicators -->
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-</div>
- 
- <div class="info-cont">
-  <h2 ><a href="aboutme.html">O MĚ</a></h2>
-     <script src="easy_background.js"></script>
-  <script>
-    easy_background(".info-cont",
-      {
-        slide: ["images/01.jpg", "images/portrait-cropped.png"],
-        delay: [2000, 2000]
-      }
-    );
-  </script>
- </div>
- 
- <div class="slim-conts">
-  <h2>PROCES STRUČNĚ KROK ZA KROKEM</h2>
-       <p>S klienty se nejprve domlouvám online. Napíšou jaký motiv by chtěli,jak si ho představují, nebo co by měl znázorňovat (případně mohou poslat vlastní obrázek pro inspiraci), a já jim následně zpracuji návrh ke schválení. Pokud jsou s návrhem spokojení domluvíme se na termínu kdy samotné tetování proběhne.</p>
-       <p>Před tetováním by člověk neměl pít alkohol. Měl by přijít dobře naladěný a najedený.</p>
-       <p>  Po krátké osobní konzultaci otisknu, nebo překreslím motiv na kůži a můžeme jít na věc. </p>
-	  <p>Hotové tetování si vyfotím a zalepím ho fólií. Před odchodem se pak také dozvíte vše o tom, jak o své nové tetování pečovat a na co si dát pozor.</p>
-        <p> </p>
-       
-</div>
-</div>
-
-<div class="footer">
- &copy; MM, 2020
-</div>
-
-
-<!--
+  <!--
   <h2>CO JE HANDPOKE?</h2>
     <p>Handpoke, nebo také "Stick and poke" je trvalé tetování, které se tvoří bez strojku a elektřiny, pouze jehlou a barvou. Hand – ruka. Poke – šťouchnout. Je to tradiční metoda tetování, která vznikla  už před tisíci lety. Nyní se k ní mnoho lidí vrací. </p>
     <p>Výhodou této techniky je, že narozdíl od strojku nevydává žádný hluk a tatér má nad jehlou větší kontrolu. Je však pomalejší a pracnější, barva je vpravována do kůže tečku po tečce. Bolest vnímá každý jinak, ovšem pro mnohé je proces handpoku uklidňující a relaxující zkušeností, někteří jej vnímají přímo jako rituál.</p>
@@ -326,60 +141,8 @@ padding-top: 80px;
         -->
 
 
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-//	var dropdown = document.getElementsByClassName("dropdown");
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-	  
-	navbar.style.fontSize="10px";
-//	  var element = document.getElementsByClassName("sticky");
-//	 
-//	  for (var i = 0; i< element.length; i++){
-//		  element[i].style.fontSize="10px";
-//		  
-//	  }
-   
-  
-//	 navbar.style.fontSize=10px;
-//	dropdown.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-	/*text slide show */
-	var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
