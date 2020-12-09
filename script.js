@@ -2,14 +2,14 @@ window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-//	var dropdown = document.getElementsByClassName("dropdown");
+
 
 function myFunction() {
-    var items = navbar.getElementsByTagName("a")
+    var items = navbar.getElementsByTagName("a");
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
         for (var i = 0; i < items.length; i++) {
-            items[i].style.fontSize = "20px";
+            items[i].style.fontSize = "22px";
         }
     } else {
         navbar.classList.remove("sticky");

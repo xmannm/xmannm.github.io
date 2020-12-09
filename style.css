@@ -67,21 +67,12 @@
       float: right;
       background-color: #1D1D1D;
       width: 100%;
-      font-size: 12px;
-      /* kdybys chtel si ten okraj od textu dat vetsi */
-      /* padding-bottom: 20px; */
+		/*fontsize nastavuju ve scriptu*/
+      
     }
 
-    .stickyelement {
-      font-size: 10px;
-    }
-
-    .sticky,
-    .content {
-      /*  padding-top: 60px;*/
-      font-size: 12px;
-    }
-
+   
+   
     .dropdown {
       position: relative;
       display: inline-block;
