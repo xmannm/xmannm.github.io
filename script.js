@@ -6,7 +6,7 @@ var sticky = navbar.offsetTop;
 
 function myFunction() {
     var items = navbar.getElementsByTagName("a");
-    if (window.pageYOffset >= sticky) {
+    if (window.pageYOffset >= sticky && window.innerWidth > 600)  {
         navbar.classList.add("sticky");
         for (var i = 0; i < items.length; i++) {
             items[i].style.fontSize = "22px";

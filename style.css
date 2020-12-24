@@ -13,8 +13,10 @@
     }
 
     .header h1 {
-      margin: 100px 200px 300px 200px;
-      text-align: center;
+
+		margin-top: 100px;
+	 	margin-bottom: 300px;
+     	text-align: center;
 
     }
 
@@ -24,8 +26,7 @@
 
     }
 
-    #navbar a,
-    .info-cont a {
+    #navbar a {
       float: left;
       display: block;
       color: #F1F1F1;
@@ -167,14 +168,20 @@
     }
 
     .info-cont {
-
-      padding: 200px;
-
+      padding-top: 200px;
+	  padding-bottom: 200px;
     }
 
     .info-cont h2,
     .info-cont a {
+		padding-left: 100px;
       color: white;
+	  float: left;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-size: 30px;
+		
     }
 
     .info-cont h2,
@@ -189,3 +196,50 @@
       padding: 100px;
       background-color: #0F0F0F;
     }
+
+
+
+@media only screen and (max-width: 599px) {
+ /* For mobile phones: */
+	
+	.header {
+      padding-bottom: 20%;
+
+    }
+
+  	.header h1 {
+		margin-top: 100px;
+	 	margin-bottom: 100px;
+    }
+	.dropdown {
+      display:grid;
+		padding:20px;
+    }
+	.info-cont  {
+		padding-top: 100px;
+	    padding-bottom: 100px;
+		
+		
+    }
+	.info-cont a {
+		padding: 0px;
+      font-size: 30px;
+		
+    }
+
+	
+}
+
+@media only screen and (max-width: 1200px) {
+  /* For tablets: */
+	.info-cont  {
+		padding-left: 0px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+  .info-cont  {
+		padding-left: 200px;
+    }
+	
+}

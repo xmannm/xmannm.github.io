@@ -118,16 +118,7 @@ nav{grid-area: nav;
   display: block;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
+
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
@@ -157,6 +148,7 @@ nav{grid-area: nav;
 #obsah h1{margin: 10px 0 10px 0;}
 #obsah h2{margin: 80px 0 10px 0;}
 
+
 .homeImg {
    width: 40%;
 	position: relative;
@@ -172,7 +164,10 @@ footer{grid-area: pata;
 	background-color: #F7F7F7;
 	   text-align: center;
 	   font-size: 75%;
-	   padding: 10px 0;
+	   padding: 10px 5px;
+	margin-top: 10px;
+	
+
 	   
 }
 
@@ -214,6 +209,52 @@ article h2{font-size: 100%;
 }
 .homebtn:hover {
   color: white;
+}
+
+@media only screen and (max-width: 599px) {
+ /* For mobile phones: */
+	
+	#stranka {
+		  grid-template-columns:100%;  
+	}
+	#obsah{grid-area: obsah;
+	padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 180px;
+		
+	}
+	.topnav {
+	position: absolute;
+	margin-top: 30px;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
+
+	.topnav a, .dropdown .dropbtn {
+  padding: 5px 5px;
+  font-size: 16px;
+	}
+
+	
+	
+	
+	
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  /* For tablets: */
+	#stranka {
+		  grid-template-columns:60%;  
+	}
+	#obsah{grid-area: obsah;
+		padding-bottom: 100px;
+		
+	}
+	
+}
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+  
 }
 
 
